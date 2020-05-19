@@ -1,38 +1,44 @@
+@fontface {
+  font-family: 'Reem Kufi', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap')
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: #011f4b;
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
+  color: #fff4e6;
+}
+
+.content-wrapper {
+  max-width: 650px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 25vh;
 }
 
-.App-link {
-  color: #61dafb;
+.greeting {
+  font-size: 52px;
+  font-weight: bold;
+  border-bottom: 2px solid #FAFAFA;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titles-container {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  font-size: 24px;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.links {
+  margin-top: 32px;
 }
