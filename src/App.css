@@ -42,8 +42,8 @@ a {
   flex-direction: column;
   margin-top: 32px;
   font-size: 22px;
-  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.9s both;
-  animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.9s both;
+  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
+  animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
   padding: 16px;
 }
 
