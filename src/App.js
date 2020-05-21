@@ -21,10 +21,20 @@ function App() {
   ];
   const [phraseIndex, setPhraseIndex] = useState(0)
 
+  const summary = () => (
+    <div className="summary">
+      <div className="summary-item">Computer Engineering Student</div>
+      <div className="summary-item">Web Development Enthusiast</div>
+      <div className="summary-item">Lifelong Learner</div>
+    </div>
+  )
+
   useEffect(() => {
-    setTimeout(() => {
-      setPhraseIndex((phraseIndex + 1) % phrases.length);
-    }, 2800);
+    if (phraseIndex < phrases.length) {
+      setTimeout(() => {
+        setPhraseIndex((phraseIndex + 1));
+      }, 2800);
+    }
   }, [phraseIndex, phrases])
 
   return (
@@ -33,25 +43,31 @@ function App() {
         <div className="greeting">
             Hi, I'm Rafael!
         </div>
-        <div className="titles-container">
-          <div className="title" key={makeId()}>
-           {phrases[phraseIndex]}
+        {
+          phraseIndex < phrases.length ? 
+          (
+          <div className="titles-container slide-out" key={makeId()}>
+            <div className="title" key={makeId()}>
+            {phrases[phraseIndex]}
+            </div>
           </div>
-        </div>
+        ) :
+        summary()
+        }
         <div className="links">
           <div className="link">
             <a href="https://www.github.com/rrrahal" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} size="3x" />
+              <FontAwesomeIcon icon={faGithub} inverse size="3x" className="icon" />
             </a>
           </div>
           <div className="link">
             <a href="https://www.twitter.com/rafael_rahal" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitter} size="3x" />
+              <FontAwesomeIcon icon={faTwitter} inverse size="3x" className="icon" />
             </a>
           </div>
           <div className="link">
             <a href="https://www.linkedin.com/in/rafaelrahal/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} size="3x" />
+              <FontAwesomeIcon icon={faLinkedin} inverse size="3x" className="icon" />
             </a>
           </div>
         </div>
