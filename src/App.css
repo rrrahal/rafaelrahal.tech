@@ -3,7 +3,7 @@
   src: url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap')
 }
 
-/* reset for a tag */
+/* reset for a html element */
 
 a {
   color: inherit;
@@ -17,6 +17,7 @@ a {
   justify-content: center;
   min-height: 100vh;
   color: #fff4e6;
+  min-width: 100vw;
 }
 
 .content-wrapper {
@@ -29,7 +30,7 @@ a {
 }
 
 .greeting {
-  font-size: 56px;
+  font-size: 44px;
   font-weight: bold;
   border-bottom: 2px solid #FAFAFA;
   animation: slide-in-top 1.25s ease-in-out both;
@@ -40,9 +41,10 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 32px;
-  font-size: 36px;
-  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
-	animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
+  font-size: 22px;
+  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.9s both;
+  animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.9s both;
+  padding: 16px;
 }
 
 .title {
@@ -57,7 +59,9 @@ a {
   flex-direction: row;
   justify-content: space-between;
   -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .link {
@@ -73,13 +77,28 @@ a {
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   margin-top: 32px;
-  font-size: 36px;
+  font-size: 22px;
+  padding: 16px;
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .summary-item {
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  .greeting {
+    font-size: 56px;
+  }
+
+  .titles-container {
+    font-size: 36px;
+  }
+
+  .summary {
+    font-size: 36px;
+  }
 }
 
 /* ----------------------------------------------

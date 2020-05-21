@@ -15,7 +15,7 @@ function App() {
   const phrases = [
     "I'm a Computer Engineering Student",
     "I like turning code into real stuff",
-    "I also enjoy web development very much",
+    "I also enjoy web development",
     "(especially front-end)",
     "I'm always trying to learn new things",
     "Find me and say hello (:"
@@ -35,7 +35,7 @@ function App() {
     if (phraseIndex < phrases.length) {
       setTimeout(() => {
         setPhraseIndex((phraseIndex + 1));
-      }, 2800);
+      }, 3000);
     }
   }, [phraseIndex, phrases])
 
