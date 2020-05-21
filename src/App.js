@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { usePageVisibility } from 'react-page-visibility';
 import shortid from "shortid";
 
 
@@ -20,14 +21,15 @@ function App() {
     "Find me and say hello (:"
   ];
   const [phraseIndex, setPhraseIndex] = useState(0)
-
-  const summary = () => (
-    <div className="summary">
-      <div className="summary-item">Computer Engineering Student</div>
-      <div className="summary-item">Web Development Enthusiast</div>
-      <div className="summary-item">Lifelong Learner</div>
-    </div>
-  )
+  const [userHasSeen, setUserHasSeen] = useState(false);
+  const isVisible = usePageVisibility()
+  
+  useEffect(() => {
+    if (!userHasSeen) {
+      setUserHasSeen(isVisible);
+      setPhraseIndex(0);
+    }
+  }, [isVisible, userHasSeen])
 
   useEffect(() => {
     if (phraseIndex < phrases.length) {
@@ -37,7 +39,16 @@ function App() {
     }
   }, [phraseIndex, phrases])
 
-  return (
+
+  const summary = () => (
+    <div className="summary">
+      <div className="summary-item">Computer Engineering Student</div>
+      <div className="summary-item">Web Development Enthusiast</div>
+      <div className="summary-item">Lifelong Learner</div>
+    </div>
+  )
+
+  return ( userHasSeen &&
     <div className="App">
       <div className="content-wrapper">
         <div className="greeting">
@@ -54,7 +65,9 @@ function App() {
         ) :
         summary()
         }
-        <div className="links">
+        {
+          phraseIndex >= phrases.length - 1 &&
+          <div className="links">
           <div className="link">
             <a href="https://www.github.com/rrrahal" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} inverse size="3x" className="icon" />
@@ -71,6 +84,8 @@ function App() {
             </a>
           </div>
         </div>
+
+        }
       </div>
     </div>
   );
