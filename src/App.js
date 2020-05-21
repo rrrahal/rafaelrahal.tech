@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import shortid from "shortid";
 
 
 import './App.css';
+
+const makeId = () => {
+  return shortid.generate();
+}
 
 function App() {
   const phrases = [
@@ -20,7 +25,7 @@ function App() {
     setTimeout(() => {
       setPhraseIndex((phraseIndex + 1) % phrases.length);
     }, 2800);
-  }, [phraseIndex])
+  }, [phraseIndex, phrases])
 
   return (
     <div className="App">
@@ -29,23 +34,23 @@ function App() {
             Hi, I'm Rafael!
         </div>
         <div className="titles-container">
-          <div className="title">
+          <div className="title" key={makeId()}>
            {phrases[phraseIndex]}
           </div>
         </div>
         <div className="links">
           <div className="link">
-            <a href="https://www.github.com/rrrahal" target="_blank">
+            <a href="https://www.github.com/rrrahal" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} size="3x" />
             </a>
           </div>
           <div className="link">
-            <a href="https://www.twitter.com/rafael_rahal" target="_blank">
+            <a href="https://www.twitter.com/rafael_rahal" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTwitter} size="3x" />
             </a>
           </div>
           <div className="link">
-            <a href="https://www.linkedin.com/in/rafaelrahal/" target="_blank">
+            <a href="https://www.linkedin.com/in/rafaelrahal/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} size="3x" />
             </a>
           </div>
