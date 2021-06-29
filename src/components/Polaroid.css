@@ -1,0 +1,26 @@
+.polaroid {
+    background-color: #fdf9ef;
+}
+
+@media (max-width: 480px) {
+    .polaroid {
+      display: flex;
+      flex-direction: column;
+      border-width: 5px;
+      padding: 20px;
+      justify-items: center;
+      align-items: center;
+      max-width: 60%;
+    }
+
+    .picture-container {
+      display: flex;
+      align-self: center;
+      max-width: 100%;
+      border-width: 8px;
+    }
+
+    .picture {
+        width: 100%;
+    }
+  }

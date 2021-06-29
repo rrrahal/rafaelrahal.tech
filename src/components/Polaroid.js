@@ -5,8 +5,10 @@ import './Polaroid.css'
 export const Polaroid = () => {
     return (
     <div className="polaroid">
-      <img src="https://i.ibb.co/LzPg6Qm/clojure-second.png" />
-      <div className="caption">Hello</div>
+      <div className="picture-container">
+        <img src="https://i.ibb.co/Gvp7t6H/porto-retrato.jpg" alt="my-polaroid-pic" className="picture" />
+      </div>
+      <p className="caption">Hello</p>
     </div>
     )
 }

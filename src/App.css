@@ -12,10 +12,10 @@ a {
 
 .App {
   font-family: 'Reem Kufi', sans-serif;
-  background-color: #011f4b;
+  background-color: #FAFAFA;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
-  color: #fff4e6;
   min-width: 100vw;
 }
