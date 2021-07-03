@@ -23,5 +23,6 @@ a {
     align-items: center;
     min-height: 100vh;
     min-width: 100vw;
+    padding-top: 12px;
   }
 }
