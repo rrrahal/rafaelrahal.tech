@@ -8,7 +8,7 @@ export const Polaroid = () => {
       <div className="picture-container">
         <img src="https://i.ibb.co/Gvp7t6H/porto-retrato.jpg" alt="my-polaroid-pic" className="picture" />
       </div>
-      <p className="caption">Hello</p>
+      <p className="caption">Rafael Rahal</p>
     </div>
     )
 }

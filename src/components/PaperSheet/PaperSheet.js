@@ -7,11 +7,10 @@ export const PaperSheet = () => {
     <div className="paper-container">
       <div className="paper">
         <div className="title" role="textbox">
-            Lorem ipsum dolor sit amet.
+            Hello,
         </div>
         <div className="first-paragraph" role="textbox">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Illo et cumque animi cum delectus adipisci illum laboriosam explicabo, voluptatem ab?
+            I'm a Brazilian/Italian Software Enginner, currently working for Talkdesk in Portugal.
         </div>
         <div className="second-paragraph" role="textbox">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
