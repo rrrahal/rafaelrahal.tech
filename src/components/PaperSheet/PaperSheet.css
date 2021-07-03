@@ -9,10 +9,12 @@
 .paper {
   padding: 24px;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
   display: flex;
+  border-radius: 2px;
   flex-direction: column;
   height: 100%;
+  font-weight: 300;
   /* Paper box shadow */
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
               0 1px 5px 0 rgba(0,0,0,0.12),
@@ -21,7 +23,7 @@
 
 .title {
   margin-bottom: 16px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .first-paragraph {
