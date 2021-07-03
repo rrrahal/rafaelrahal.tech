@@ -1,7 +1,5 @@
 .polaroid {
-  /*background-color: #fdf9ef;*/
-  background-color: black;
-
+  background-color: #fdf9ef;
 }
 
 @media (max-width: 480px) {
@@ -25,7 +23,7 @@
   }
 
   .caption {
-    color: white;
+    color: black;
     margin-top: 16px;
     margin-bottom: 16px;
   }
