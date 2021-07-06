@@ -1,5 +1,9 @@
-
-
+.polaroid-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
 
 .polaroid {
   background-color: #FFFFFF;
@@ -8,12 +12,6 @@
   flex-direction: column;
   align-items: center;
   max-width: 200px;
-}
-
-.polaroid-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .picture {
