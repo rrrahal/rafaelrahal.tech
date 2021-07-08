@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: flex-end;
   flex: 1;
+  max-width: 30%;
 }
 
 .polaroid {
