@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600&display=swap');
 
 
+:root {
+  --number-of-letters: 6;
+  --animation-delay: 2s;
+}
+
 .paper-container {
   display: flex;
   justify-content: center;
@@ -46,14 +51,14 @@
 
 .title::before {
   background: white;
-  animation: typewriter .5s
-    steps(6) 4s forwards;
+  animation: typewriter .5s steps(var( --number-of-letters)) var(--animation-delay) forwards;
 }
 
 .title::after {
   width: 0.125rem;
   background: black;
-  animation: typewriter .5s steps(6) 4s forwards;
+  animation: typewriter .5s steps(var( --number-of-letters)) var(--animation-delay) forwards,
+      blink 750ms steps(var( --number-of-letters)) infinite;
 }
 
 /* End of Hello Animation */
