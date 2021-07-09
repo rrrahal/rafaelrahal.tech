@@ -29,11 +29,12 @@ export const PaperSheet = () => {
         </div>
         <div className='links-container'>
           <div className="links" role="textbox">
-              Find me on
-              {<FontAwesomeIcon icon={faGithub} className="icon" />}
-              {<FontAwesomeIcon icon={faLinkedin} className="icon"  />}
-              <br />Download my CV here,
-              <br/> and also check my blog.
+            <div className="contact-me-section">
+            Contact me:
+              {<FontAwesomeIcon icon={faGithub} className="icon" color="#282828" />}
+              {<FontAwesomeIcon icon={faLinkedin} className="icon"  />}<br/>
+            </div>
+              download my CV here, and also check my blog.
           </div>
         </div>
       </div>
