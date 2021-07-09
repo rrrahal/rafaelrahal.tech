@@ -10,7 +10,7 @@ export const PaperSheet = () => {
     <div className="paper-container">
       <div className="paper">
         <div className="title" role="textbox">
-            Hello,
+            Hello <span role="img" aria-label="waving-hand">👋</span>
         </div>
         <div className="first-paragraph" role="textbox">
             I'm a Brazilian/Italian Software Enginner, currently working for Talkdesk.

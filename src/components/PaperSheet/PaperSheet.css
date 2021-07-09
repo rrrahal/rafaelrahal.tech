@@ -11,7 +11,10 @@
 
 .paper {
   font-family: 'Josefin Slab', serif;
-  max-width: 50%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 100%;
+  max-height: 60%;
   padding: 32px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
@@ -44,7 +47,7 @@
   padding-left: 4px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .paper-container {
     width: 100%;
     box-sizing: border-box;
@@ -62,7 +65,8 @@
     flex-direction: column;
     height: 100%;
     font-weight: 400;
-    max-width: 100%;
+    width: 100%;
+    max-width: 380px;
     /* Paper box shadow */
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
                 0 1px 5px 0 rgba(0,0,0,0.12),

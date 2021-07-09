@@ -25,7 +25,13 @@
           animation: fade-in 3s cubic-bezier(0.755, 0.050, 0.855, 0.060) 0.5s both;
 }
 
-@media (max-width: 480px) {
+.caption {
+  color: black;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 550px) {
   .polaroid-container {
     padding-bottom: 0px;
     max-width: 35%;
@@ -45,12 +51,6 @@
   .picture {
     width: 100%;
     height: 100%;
-  }
-
-  .caption {
-    color: black;
-    margin-top: 8px;
-    margin-bottom: 8px;
   }
 }
 
