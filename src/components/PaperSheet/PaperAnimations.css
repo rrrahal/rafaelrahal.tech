@@ -1,0 +1,44 @@
+:root {
+  --number-of-letters: 6;
+  --animation-delay: 2s;
+  --hello-typewrite-time: .5s;
+  --dissapear-time: calc(var(--animation-delay) + 3s);
+}
+
+/* Hello Animation */
+
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.title::before {
+  background: white;
+  animation: typewriter var(--hello-typewrite-time) steps(var( --number-of-letters)) var(--animation-delay) forwards;
+}
+
+.title::after {
+  width: 0.125rem;
+  background: black;
+  animation: typewriter var(--hello-typewrite-time) steps(var( --number-of-letters)) var(--animation-delay) forwards,
+              blink 750ms steps(var( --number-of-letters)) infinite,
+              blink 20ms ease var(--dissapear-time) forwards;
+}
+
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}

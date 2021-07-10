@@ -4,6 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
 import './PaperSheet.css'
+import './PaperAnimations.css'
 
 export const PaperSheet = () => {
   return (
