@@ -64,6 +64,10 @@
   padding-left: 4px;
 }
 
+.emoji {
+  font-size: 1.15rem;
+}
+
 @media (max-width: 550px) {
   .paper-container {
     width: 100%;

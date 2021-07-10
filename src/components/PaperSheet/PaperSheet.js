@@ -12,13 +12,16 @@ export const PaperSheet = () => {
     <div className="paper-container">
       <div className="paper">
         <div className="title" role="textbox">
-            Hello <span role="img" aria-label="waving-hand">👋</span>
+            Hello <span role="img" aria-label="waving-hand" className="emoji">👋</span>
         </div>
         <div className="first-paragraph" role="textbox">
-            I'm a Brazilian/Italian Software Enginner, currently working for
+            I'm a 
+            <span role="img" aria-label="brazilian-flag" className="emoji"> 🇧🇷 </span>/
+            <span role="img" aria-label="italian-flag" className="emoji"> 🇮🇹 </span>
+             Software Enginner, currently working for
             <RoughNotation animationDelay="3500" show type="highlight" color="#BF91FC">
-             <a href="https://www.talkdesk.com/" rel="noopener noreferrer" target="_blank"> Talkdesk</a>
-            </RoughNotation>.
+             <a href="https://www.talkdesk.com/" rel="noopener noreferrer" target="_blank"> Talkdesk.</a>
+            </RoughNotation>
         </div>
         <div className="second-paragraph" role="textbox">
             I worked on QuintoAndar and Geekie which are great tech companies in Brazil, on those internships I learned that
