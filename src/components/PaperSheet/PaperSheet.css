@@ -16,6 +16,7 @@
 
 .paper {
   font-family: 'Josefin Slab', serif;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   max-width: 40%;
@@ -78,6 +79,7 @@
   }
 
   .paper {
+    font-size: 16px;
     padding: 24px;
     box-sizing: border-box;
     background-color: #FFFFFF;
