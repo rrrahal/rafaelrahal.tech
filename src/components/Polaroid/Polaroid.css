@@ -36,6 +36,7 @@
     padding-bottom: 0px;
     max-width: 35%;
     background-color: #FFFFFF;
+    flex: 0;
   }
 
   .polaroid {
