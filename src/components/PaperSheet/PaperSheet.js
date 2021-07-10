@@ -45,7 +45,7 @@ export const PaperSheet = () => {
               {<a href="https://www.linkedin.com/in/rafaelrahal/" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} className="icon" color="#0077b5"  />
               </a>} <br/>
-              And you can also check my blog.
+              And you can also check my <a href="https://www.blog.rafaelrahal.tech" rel="noopener noreferrer" target="_blank"> blog.</a>
             </div>
           </div>
         </div>
