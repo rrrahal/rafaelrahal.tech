@@ -25,7 +25,7 @@ export const PaperSheet = () => {
         </div>
         <div className="second-paragraph" role="textbox">
             I worked on QuintoAndar and Geekie which are great tech companies in Brazil, on those internships I learned that
-            my passion is to use technology in the best possible to change people's live in a good way.
+            my passion is to use technology in the best possible way to change people's lives.
         </div>
         <div className="third-paragraph" role="textbox">
             I've been living in Portugal for almost a year, finishing my master's at Instituto Superior Técnico.
@@ -45,7 +45,7 @@ export const PaperSheet = () => {
               {<a href="https://www.linkedin.com/in/rafaelrahal/" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} className="icon" color="#0077b5"  />
               </a>} <br/>
-              And you can also check my <a href="https://www.blog.rafaelrahal.tech" rel="noopener noreferrer" target="_blank"> blog.</a>
+              And you can also check my blog.
             </div>
           </div>
         </div>
