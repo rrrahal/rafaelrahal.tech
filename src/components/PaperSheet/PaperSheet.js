@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { RoughNotation } from "react-rough-notation";
 
 
 import './PaperSheet.css'
@@ -14,7 +15,10 @@ export const PaperSheet = () => {
             Hello <span role="img" aria-label="waving-hand">👋</span>
         </div>
         <div className="first-paragraph" role="textbox">
-            I'm a Brazilian/Italian Software Enginner, currently working for Talkdesk.
+            I'm a Brazilian/Italian Software Enginner, currently working for
+            <RoughNotation animationDelay="3500" show type="highlight" color="#BF91FC">
+             <a href="https://www.talkdesk.com/" rel="noopener noreferrer" target="_blank"> Talkdesk</a>
+            </RoughNotation>.
         </div>
         <div className="second-paragraph" role="textbox">
             I worked on QuintoAndar and Geekie which are great tech companies in Brazil, on those internships I learned that
