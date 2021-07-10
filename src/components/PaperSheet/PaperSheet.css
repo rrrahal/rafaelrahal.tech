@@ -63,6 +63,8 @@
 
 .icon {
   padding-left: 4px;
+  padding-right: 4px;
+  font-size: 1.25rem;
 }
 
 .emoji {
@@ -122,10 +124,5 @@
   .fourth-paragraph {
     margin-bottom: 12px;
   }
-
-  .icon {
-    padding-left: 4px;
-  }
-
 }
 

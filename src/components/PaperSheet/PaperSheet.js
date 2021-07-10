@@ -39,10 +39,14 @@ export const PaperSheet = () => {
           <div className="links" role="textbox">
             <div className="contact-me-section">
             Contact me:
-              {<FontAwesomeIcon icon={faGithub} className="icon" color="#282828" />}
-              {<FontAwesomeIcon icon={faLinkedin} className="icon"  />}<br/>
+              {<a href="https://github.com/rrrahal" rel="noopener noreferrer" target="_blank">
+                <FontAwesomeIcon icon={faGithub} className="icon" color="#333" />
+              </a>}
+              {<a href="https://www.linkedin.com/in/rafaelrahal/" rel="noopener noreferrer" target="_blank">
+              <FontAwesomeIcon icon={faLinkedin} className="icon" color="#0077b5"  />
+              </a>} <br/>
+              And you can also check my blog.
             </div>
-              download my CV here, and also check my blog.
           </div>
         </div>
       </div>
