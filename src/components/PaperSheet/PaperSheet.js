@@ -37,14 +37,18 @@ export const PaperSheet = () => {
         <div className='links-container'>
           <div className="links" role="textbox">
             <div className="contact-me-section">
-            Feel free to reach me anytime:
+              Feel free to reach me:
+            <div className="icons-container">
               {<a href="https://github.com/rrrahal" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon icon={faGithub} className="icon" color="#333" />
               </a>}
               {<a href="https://www.linkedin.com/in/rafaelrahal/" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} className="icon" color="#0077b5"  />
-              </a>} <br/>
-              And you can also check my blog.
+              </a>}
+              </div>
+            </div>
+            <div className="blog-phrase">
+              Check my blog too.
             </div>
           </div>
         </div>
