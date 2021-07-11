@@ -15,30 +15,29 @@ export const PaperSheet = () => {
             Hello <span role="img" aria-label="waving-hand" className="emoji">👋</span>
         </div>
         <div className="first-paragraph" role="textbox">
-            I'm a 
+            I'm a
             <span role="img" aria-label="brazilian-flag" className="emoji"> 🇧🇷 </span>/
             <span role="img" aria-label="italian-flag" className="emoji"> 🇮🇹 </span>
-             Software Enginner, currently working for
+             Software Engineer, currently working for
             <RoughNotation animationDelay="3500" show type="highlight" color="#BF91FC">
              <a href="https://www.talkdesk.com/" rel="noopener noreferrer" target="_blank"> Talkdesk.</a>
             </RoughNotation>
         </div>
         <div className="second-paragraph" role="textbox">
-            I worked on QuintoAndar and Geekie which are great tech companies in Brazil, on those internships I learned that
-            my passion is to use technology in the best possible way to change people's lives.
+        My experiences are with both frontend and backend development and
+         my true passion is to help products that change lives and are a delight to people's eyes.
         </div>
         <div className="third-paragraph" role="textbox">
-            I've been living in Portugal for almost a year, finishing my master's at Instituto Superior Técnico.
-            I also attended Escola Politécnica da USP in São Paulo, Brazil.
+        I'm always trying to learn new things but lately
+        I've been into the React ecosystem and functional programming. I also love cooking and sports.
         </div>
         <div className="fourth-paragraph" role="textbox">
-            Full-Stack Web Development alongside with functional programing have been my main interests in recent times.
-            I try to write about things that I'm learning in my blog.
-        </div>
+        My college education was done both in Brazil and in Portugal.
+        I've been living in Europe since September of 2020 and I'm always willing to take on a new challenge and get out of my comfort zone.        </div>
         <div className='links-container'>
           <div className="links" role="textbox">
             <div className="contact-me-section">
-            Contact me:
+            Feel free to reach me anytime:
               {<a href="https://github.com/rrrahal" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon icon={faGithub} className="icon" color="#333" />
               </a>}
