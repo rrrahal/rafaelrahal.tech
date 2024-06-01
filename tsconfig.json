@@ -14,7 +14,8 @@
   "include": [
     "./src/env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "/**/*.astro"
   ],
   "exclude": [
     "dist"
