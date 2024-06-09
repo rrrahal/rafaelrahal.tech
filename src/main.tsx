@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import App from './App.tsx'
-import  Root from './routes/root.tsx'
+import  Root from './routes/root/root.tsx'
 import ErrorPage from './error-page.tsx';
 
 import './index.css'
