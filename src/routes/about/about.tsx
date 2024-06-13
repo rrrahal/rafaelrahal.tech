@@ -1,7 +1,5 @@
+import AboutMDX from "./about.mdx";
+
 export default () => {
-  return (
-    <>
-      <h1> This is the about page</h1>
-    </>
-  );
+  return <AboutMDX />;
 };
