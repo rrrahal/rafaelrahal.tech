@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: ({theme}) => ({
+        ...theme,
+        "max-text":'710px'
+      })
+    },
+
   },
   plugins: [require("@catppuccin/tailwindcss")(
     {

@@ -23,8 +23,8 @@ export default function Root() {
     );
 
   return (
-    <main className={`flex flex-col items-center ${theme} bg-ctp-base text-ctp-text min-h-screen`}>
-      <header className="flex flex-col items-center justify-center p-2 w-full pt-2 px-10 md:max-w-[60%]">
+    <main className={`flex flex-col items-center ${theme} bg-ctp-base text-ctp-text min-h-screen md:px-0 px-3`}>
+      <header className="flex flex-col items-center justify-center p-2 w-full pt-2 md:max-w-max-text">
         <nav className="flex justify-between w-full sm:px-5">
           <Link to="/">
             <h2 className="caveat text-2xl sm:text-3xl font-bold hover:text-ctp-blue">Rafael Rahal</h2>
@@ -43,7 +43,7 @@ export default function Root() {
         </nav>
         <Separator.Root className="h-px bg-ctp-surface2 w-full mt-1" />
       </header>
-      <section className="w-full  max-w-[60%] text-ctp-text">
+      <section className="w-full md:max-w-max-text text-ctp-text mt-12">
         <Outlet />
       </section>
     </main>
