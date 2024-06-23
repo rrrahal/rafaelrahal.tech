@@ -27,15 +27,11 @@ export default function Root() {
       <header className="flex flex-col items-center justify-center p-2 w-full pt-2 md:max-w-max-text">
         <nav className="flex justify-between w-full sm:px-5">
           <Link to="/">
-            <h3 className="caveat text-2xl sm:text-3xl font-bold hover:text-ctp-blue">Rafael Rahal</h3>
+            <h4 className="caveat text-2xl sm:text-3xl font-bold hover:text-ctp-blue">Rafael Rahal</h4>
           </Link>
           <div className="flex space-x-3 items-center">
             <Link className="hover:text-ctp-blue" to="/about">
-              <h3> About </h3>
-            </Link>
-            <Separator.Root decorative orientation="vertical" className="w-px bg-ctp-surface2 h-full" />
-            <Link className="hover:text-ctp-blue" to={"/blog"}>
-              <h3> Blog </h3>
+              <h4> About </h4>
             </Link>
             <Separator.Root decorative orientation="vertical" className="w-px bg-ctp-surface2 h-full" />
             {icon}

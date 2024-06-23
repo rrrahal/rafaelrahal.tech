@@ -47,6 +47,11 @@ h2 {
   line-height: 1.1;
 }
 
+h3 {
+  font-size: 1.5em;
+  line-height: 1.1;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -70,8 +75,8 @@ button:focus-visible {
   vertical-align: middle;
   overflow: hidden;
   user-select: none;
-  width: 200px;
-  height: 250px;
+  width: 150px;
+  height: 200px;
   border-radius: 10%;
   background-color: var(--black-a3);
 }
