@@ -1,11 +1,31 @@
-# Hello, I'm Rafael 👋
+import * as Avatar from '@radix-ui/react-avatar';
 
 
-Hi, I'm Rafael, a software engineer at Datadog based in Lisbon.
-Over the past few years, I've focused mainly on frontend development,
-but I consider myself a generalist, enjoying various aspects of software engineering.
-I occasionally write about what I'm learning, so feel free to check out my blog here.
-You can also connect with me on Twitter and LinkedIn.
+<article className="flex flex-col items-center grow px-6">
+<div>
+    <Avatar.Root className="AvatarRoot">
+      <Avatar.Image
+        className="AvatarImage"
+        src="/public/porto_retrato-min-1.jpg"
+        alt="Rafael Rahal"
+      />
+      <Avatar.Fallback className="AvatarFallback" delayMs={500}>
+        RR
+      </Avatar.Fallback>
+    </Avatar.Root>
+  </div>
+<br/>
+##  Hello 👋
+<br/>
+
+### I'm Rafael, a Software Engineer currently working for Datadog.
+
+I'm mostly interested in web-dev and programming languages/interpreters. I use this personal website as a mini-portfolio and also (sometimes)
+write about what's on my mind to clear my thoughts and help consolidate knowledge.
+
+If you wand to contact me you can reach out to me on <a href="https://www.linkedin.com/in/rafaelrahal/" target="_blank">Linkedin</a> or send me an <a target="_blank" href="mailto:rrrahal@gmail.com">e-mail</a>.
+
+</article>
 
 
 
