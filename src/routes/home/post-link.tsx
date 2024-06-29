@@ -8,7 +8,7 @@ type PostLinkProps = {
   tags: string[];
 };
 
-export const PostLink = ({ title, subtitle, date, url, tags }: PostLinkProps) => {
+export const PostLink = ({ title, subtitle, date, url }: PostLinkProps) => {
   return (
     <li className="flex flex-col">
       <div className="flex mt-2 w-full justify-between">
