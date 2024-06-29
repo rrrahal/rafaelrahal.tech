@@ -11,8 +11,8 @@ import Sharks from "./routes/blog/posts/sharks.mdx";
 import ErrorPage from "./error-page.tsx";
 
 datadogRum.init({
-  applicationId: process.env.REACT_APP_DD_APP,
-  clientToken: process.env.REACT_APP_DD_CLIENT_TOKEN,
+  applicationId: import.meta.env.VITE_DD_APP,
+  clientToken: import.meta.env.VITE_DD_CLIENT_TOKEN,
   // `site` refers to the Datadog site parameter of your organization
   // see https://docs.datadoghq.com/getting_started/site/
   site: "datadoghq.eu",
