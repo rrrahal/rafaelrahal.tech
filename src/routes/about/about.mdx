@@ -1,4 +1,5 @@
 import * as Avatar from '@radix-ui/react-avatar';
+import Photo from '../../../public/porto_retrato-min-1.jpg'
 
 
 <article className="flex flex-col items-center grow px-6 gap-6">
@@ -7,7 +8,7 @@ import * as Avatar from '@radix-ui/react-avatar';
     <Avatar.Root className="AvatarRoot">
       <Avatar.Image
         className="AvatarImage"
-        src="/public/porto_retrato-min-1.jpg"
+        src={Photo}
         alt="Rafael Rahal"
       />
       <Avatar.Fallback className="AvatarFallback" delayMs={500}>
